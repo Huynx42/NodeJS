@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JavaScript Array every</h2>
+    <p>Students:</p>
+    <p id='students'></p>
+
+    <p>Is all student are female?:</p>
+    <p id='result'></p>
+    <script>
+        const student = [
+            {
+                name: "Nguyen Van A",
+                sex: "female"
+            },
+            {
+                name: "Nguyen Van B",
+                sex: "female"
+            },
+            {
+                name: "Nguyen Van C",
+                sex: "female"
+            }
+        ];
+        document.getElementById('students').innerHTML = JSON.stringify(student);
+        const result = student.every((element,index) => element.sex === "female");
+        document.getElementById('result').innerHTML = result;
+    </script>
+</body>
+</html>
