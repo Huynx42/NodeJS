@@ -29,7 +29,7 @@
         ];
 
         document.getElementById('students').innerHTML = JSON.stringify(student);
-        
+        student.sort(student.score);
         const result = student.findIndex(element => element.name === "A");
         document.getElementById('result').innerHTML = result + 1;
     </script>

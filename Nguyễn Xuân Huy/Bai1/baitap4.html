@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JavaScript Array filter and reduce</h2>
+    <p>Array numbers:</p>
+    <p id='numbers'></p>
+
+    <p>Total of event numbers in array:</p>
+    <p id='result'></p>
+    <script>
+        const numbers = [13,122,12,4,17,3,44];
+        document.getElementById('numbers').innerHTML = numbers;
+        const event = numbers.filter(element => element % 2 === 0);
+        document.getElementById('result').innerHTML = event.reduce((previousValue,currentValue) => previousValue + currentValue);
+    </script>
+</body>
+</html>
