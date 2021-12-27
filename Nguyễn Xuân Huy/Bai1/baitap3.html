@@ -27,9 +27,8 @@
                 score: 9
             }
         ];
-
         document.getElementById('students').innerHTML = JSON.stringify(student);
-        student.sort(student.score);
+        student.sort();
         const result = student.findIndex(element => element.name === "A");
         document.getElementById('result').innerHTML = result + 1;
     </script>

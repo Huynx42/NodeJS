@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const myClass = [
+            {
+                name: 'An Nguyễn',
+                score: 9
+            },
+            {
+                name: 'Lê Phan',
+                score: 7
+            },
+            {
+                name: "Bình Đỗ",
+                score: 10
+            },
+            {
+                name: "Anh Phạm",
+                score: 8
+            }
+        ]
+        //preScore: score trước; curStudent: object hiện tại; curStudent.score: tức {...}.score ;
+        //ở preScore đầu tiên không có giá trị, nên ,0 ở cuối là gán giá trị default;
+        const sum = myClass.reduce((preScore,curStudent) => {return curStudent.score + preScore},0);
+        const average = sum / myClass.length;
+        console.log(`Điểm trung bình của các học sinh trong lớp là: ${average}`);
+    </script>
+</body>
+</html>

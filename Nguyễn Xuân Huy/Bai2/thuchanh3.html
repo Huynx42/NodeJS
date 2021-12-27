@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const numbers = [2, 5, 6, 456, 2, 76, 1000, 123, 888];
+        let max = numbers[0];
+        for (let index = 0;index < numbers.length;index++){
+            const element = numbers[index];
+            if (max < element) {
+                max = element;
+            }
+        }
+        console.log(`So lon nhat trong mang la ${max}`);
+    </script>
+</body>
+</html>
